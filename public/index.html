@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app = "nodeJS">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Custom css -->
+    	<link rel="stylesheet" href="src/app.css">
+	    	<!-- Bootstrap css-->
+	    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	</head>
+	<body ng-controller="AppController">
+		
+		<div class="body">
+			<div class="wrapper">
+			    <div class="info"><h1>Todo:</h1> {{todo.todo}}</div>
+
+			    <input class="input-todo" type='text' phone-input ng-model="todo.todo"/>
+			    <button type="button" class="btn btn-primary" ng-click = "addTodo()"><h2 style="font-family: Times New Roman"">ADD TODO</h2></button>
+			</div>
+			<div style="margin-top: 100px;">
+			<p>
+				<h1 style="text-align: center">Things i have to do:</h1>
+			</p>
+			<ul class="rolldown-list" id="myList">
+				  <li ng-repeat = "todo in todos"> <h4 style="color: #F0F8FF;font-family: Times New Roman">{{todo.todo}} <button style= "color: #000000; float: right" class="glyphicon glyphicon-trash" ng-click = "removeTodo(todo)"></button></h4></li>
+			</ul>
+			</div>
+		</div>
+		<div class="body">
+			
+			</div>
+
+		
+
+	</body>
+	  <!-- JQuery -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+
+	<!-- Angular.js Libraries -->
+	<script src="bower_components/angular/angular.js"></script>
+
+	<!--Angular app-->
+	<script src="src/app.js"></script>
+
+	<!--Controllers-->
+	<script src="src/components/appController.js"></script>
+
+	<!--Services-->
+	<script src="src/components/services/todo.factory.js"></script>
+
+	<!--Values-->
+	<script src="src/components/values/connection.value.js"></script>
+
+</html>

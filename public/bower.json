@@ -1,0 +1,22 @@
+{
+  "name": "newApp",
+  "homepage": "https://github.com/caiofelipe97/nodeJS_Project",
+  "authors": [
+    "Caio Melo <caiofelipee17@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "bootstrap": "boostrap#^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
